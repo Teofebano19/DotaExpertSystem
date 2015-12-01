@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_wing_span -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_wing_span"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#use_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#use_for">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Wing_Span -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Wing_Span">
+        <rdfs:range rdf:resource="&owl;real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aerostat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aerostat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Boeing_737 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Boeing_737">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbofan"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Fixed-wing"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#use_for"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Civil"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Civil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Civil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#DomainConcept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#DomainConcept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Experimental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Experimental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Fixed-wing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Fixed-wing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Hypersonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Hypersonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Military -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Military">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Nasa_X43 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Nasa_X43">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Hypersonic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Fixed-wing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scramjet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherLifting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherLifting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherPropulsion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherPropulsion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Propeller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Propeller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Ramjet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Ramjet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Robinson_R22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Robinson_R22">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#RotorcraftEngine"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rotorcraft"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#use_for"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Civil"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rocket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rotorcraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rotorcraft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#RotorcraftEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#RotorcraftEngine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Saturn_V -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Saturn_V">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_cruising_speed"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Supersonic"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Transonic"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#has_propulsion"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rocket"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#lifting_method_type"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherLifting"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#use_for"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scientific"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scientific -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scientific">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scramjet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scramjet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ServiceCeiling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ServiceCeiling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Supersonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Supersonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Transonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Transonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbofan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbofan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbojet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbojet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turboprop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turboprop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Unpowered -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Unpowered">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#ValuePartition">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Civil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Experimental"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Military"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scientific"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Crusing_Speed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Lifting_Method"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Propulsion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aircraft_Uses"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Type"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Hypersonic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Subsonic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Supersonic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Transonic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Aerostat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Fixed-wing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherLifting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rotorcraft"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#OtherPropulsion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Propeller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Ramjet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Rocket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#RotorcraftEngine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Scramjet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbofan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turbojet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Turboprop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/susanti_2/ontologies/2015/10/untitled-ontology-11#Unpowered"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
